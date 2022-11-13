@@ -1,0 +1,14 @@
+---
+- name: Install java
+  apt:
+    name: openjdk-8-jdk
+    update_cache: yes
+    
+- name: Append JAVA_HOME to bashrc
+  lineinfile:
+    dest: /etc/bash.bashrc
+    line: "{{item}}"
+  with_items:
+    - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+    - export PATH=$JAVA_HOME/bin:$PATH
+

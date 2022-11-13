@@ -1,0 +1,11 @@
+---
+- name: Boostrap the server
+  hosts: tag_Name_test_ec2
+  gather_facts: yes
+  become: yes
+  become_method: sudo
+  remote_user: ubuntu
+  
+  roles:
+    - nginx
+    - jdk

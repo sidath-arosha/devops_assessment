@@ -1,0 +1,14 @@
+---
+- name: Add nginx stable repository from PPA and install its signing key on Ubuntu target
+  apt_repository:
+    repo: ppa:nginx/stable
+    
+- name: Install nginx
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+    force_apt_get: yes
+    force: yes
+  notify: start_nginx
+
