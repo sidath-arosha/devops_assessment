@@ -14,6 +14,8 @@ for devops assessment
 - install terraform application
 - write the terraform module to infrastrucure creation
 - check out the project terraform
+- configure the "aws_access_key" and "aws_secret_key" in main.tf file and remote.tf file
+- s3 bucket is used as backend to store state file as best practice
 - run the below commands the root folder in terraform project
 - "terraform init" to download the relevent version of dependencies accoding to provider
 - terraform plan
@@ -25,7 +27,7 @@ for devops assessment
 - need to install python3.8 version,boto3 and botocore and ansible latest version
 - check out the ansible project
 - copy the web.pem file to /home folder
-- access the dynamic inventory using aws_ec2.yml
+- configure the "aws_access_key" and "aws_secret_key" to access the dynamic inventory using aws_ec2.yml/inventory folder 
 - ansible-playbook -i ./inventory/aws_ec2.yml init.yml
 - there are two roles for installing and config ngix and installing jdk
 - After runing this provisioning the nginx web server with relevent configurations and install openjdk 8
