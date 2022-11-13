@@ -1,6 +1,8 @@
 # devops_assessment
 for devops assessment
 
+*** I have use my aws account aws_access_key and aws_secret_key for the testing from my side and desable the keys. ***
+
 1. steps for build and run web application
 - java 1.8 
 - ./gradlew bootjar use for buld project
