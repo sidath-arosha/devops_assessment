@@ -28,6 +28,6 @@ for devops assessment
 - check out the ansible project
 - copy the web.pem file to /home folder
 - configure the "aws_access_key" and "aws_secret_key" to access the dynamic inventory using aws_ec2.yml/inventory folder 
-- ansible-playbook -i ./inventory/aws_ec2.yml init.yml
+- ansible-playbook -i ./inventory/aws_ec2.yml playbooks/init.yml
 - there are two roles for installing and config ngix and installing jdk
 - After runing this provisioning the nginx web server with relevent configurations and install openjdk 8
